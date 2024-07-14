@@ -178,7 +178,7 @@ const Footer = () => {
         </Container>
       </section>
       <div className="copyright-area text-center">
-        <p>Copyright 2022 Akib Bhuiyan || All Rights Reserved</p>
+        <p>Copyright 2024 Bhanu Prakash Sen || All Rights Reserved</p>
       </div>
     </footer>
   );
