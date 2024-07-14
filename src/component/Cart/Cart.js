@@ -15,7 +15,12 @@ const Cart = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   console.log("cart", cart);
+  const Navigate = useNavigate();
 
+  const handleLoginRedirect = () => {
+    Navigate('/login');
+  };
+  
   const totalPrice = () => {
     try {
       let total = 0;
@@ -137,13 +142,19 @@ const Cart = () => {
             <p>Total | Checkout | Payment</p>
             <hr />
             <h4>Total : {totalPrice()} </h4>
-            <button
-              className="btn btn-primary"
-              onClick={handlePayment}
-              disabled={loading}
-            >
-              {loading ? "Processing ...." : "Make Payment"}
-            </button>
+            {user ? (
+              <button
+                className="btn btn-primary"
+                onClick={handlePayment}
+                disabled={loading}
+              >
+                {loading ? "Processing ...." : "Make Payment"}
+              </button>
+            ) : (
+              <button className="btn btn-primary" onClick={handleLoginRedirect}>
+                Login to Checkout
+              </button>
+            )}
           </div>
         </div>
       </div>

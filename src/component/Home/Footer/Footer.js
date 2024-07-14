@@ -179,8 +179,6 @@ const Footer = () => {
       </section>
       <div className="copyright-area text-center">
         <p>Copyright 2024 Bhanu Prakash Sen || All Rights Reserved</p>
-
-    
       </div>
     </footer>
   );
