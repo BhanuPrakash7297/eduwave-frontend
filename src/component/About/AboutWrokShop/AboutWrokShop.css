@@ -1,0 +1,22 @@
+
+.edu-workshop-area {
+	background-color: var(--bg-secondary);
+  background-image: url(../../../assets/images/video-home-3-bg.png);
+	background-position: top 15px left 10%;
+	background-repeat: no-repeat;
+	background-size: auto;
+  position: relative;
+  z-index: 1;
+}
+.edu-workshop-area .workshop-inner .description {
+	margin: 40px 0;
+	color: #fff;
+}
+.video-popup-wrapper {
+	position: relative;
+}.thumbnail img {
+	border-radius: 5px;
+}.edu-workshop-area .shape-image-3 {
+	right: 27px;
+	bottom: 5px;
+}

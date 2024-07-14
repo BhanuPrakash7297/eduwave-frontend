@@ -1,0 +1,80 @@
+.edu-footer {
+  background-color: #231f40;
+  color: #fff !important;
+  position: relative;
+  z-index: 1;
+}
+.footer-top .description {
+  margin-bottom: 40px;
+  margin-top: 34px;
+  color: #fff;
+}
+.footer-top .social-share {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  gap: 10px;
+  padding: 0;
+}
+.footer-top .social-share li a {
+  background: hsla(0, 0%, 100%, 0.1);
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 52px;
+  text-align: center;
+  transition: 0.4s;
+  color: #fff !important;
+}
+.explore-widget {
+  margin-left: 65px;
+}
+.edu-footer .widget-titil {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #fff;
+}
+.edu-footer .inner {
+  margin-top: 34px;
+}
+.edu-footer .inner .footer-link li a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  display: block;
+  color: #fff !important;
+}
+
+.edu-footer .inner .footer-link li + li {
+  margin-top: 20px;
+}
+.edu-footer .inner .footer-link li a svg {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.widet-information .info-list li {
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  margin: 0 auto;
+}
+.widet-information .info-list li svg {
+  font-size: 18px;
+  margin-right: 12px;
+  position: relative;
+  top: 5px;
+}
+.widet-information .info-list li + li {
+  margin-top: 20px;
+}
+.widet-information .info-list li a {
+  color: #fff !important;
+}
+.copyright-area.text-center p {
+  margin: 0;
+  font-weight: 600;
+}

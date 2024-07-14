@@ -1,0 +1,67 @@
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-content-left .title {
+    font-size: 45px;
+  }
+  .setisfied-learner {
+    padding: 0;
+  }
+  .edu-feature-area .feature-thumbnail {
+    right: 0 !important;
+  }
+  .explore-widget {
+    margin-left: 0;
+  }
+  .navbar-toggler-icon {
+    background-image: var(--menuImg) !important;
+  }
+  .contact-left {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .setisfied-learner {
+    padding: 0;
+  }
+  .edu-feature-area .feature-thumbnail {
+    right: 0;
+  }
+  .explore-widget {
+    margin-left: 0;
+  }
+  .section-title {
+    margin-top: 33px;
+  }
+  .banner-content-left .title {
+    font-size: 35px;
+  }
+  .banner-right-content .workShop {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-image-gallary {
+    margin-right: 0;
+  }
+  .mail-icon {
+    display: none;
+  }
+  .newsletter-from .input-box input {
+    min-width: 100%;
+  }
+  .newsletter-from .input-box {
+    display: block;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .eduvi-hero-video .thumbnail {
+    margin: -30px 0 0 -30px;
+  }
+  .about-image-gallary .image2 {
+    display: none;
+  }
+  .section-title .title {
+    font-size: 32px;
+  }
+  .trophy-content {
+    display: none;
+  }
+}

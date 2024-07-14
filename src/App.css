@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dark-theme {
+  --bg-color: #fff;
+  --text-clr: black;
+  --color-shade: #f5f5f5;
+  --card-bg-hover: #bdbdbd;
+  --border-color: #eee;
+  --heading-clr: #231f40;
+
+  --maintext-clr: #cdccd5;
+  --dashboard-clr: #6973df;
+
+  --main-btn-clr: #525fe1;
+  --pre-tittle-clr: #525fe1;
+  --main-btn-hover-clr: #fff;
+  --title-color: #333;
+  --main-btn-hover-bg-clr: #231f40;
+  --small-btn-clr: #f86f03;
+  --icon-color: #f86f03;
+  --banner-bg: #ffeee0;
+  --menuImg: url(./assets//images/menu.png);
+  --bg-secondary: #525fe1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.light-theme {
+  --bg-color: black;
+  --text-clr: #fff;
+  --color-shade: #f5f5f5;
+  --heading-clr: #c3c1cf;
+  --card-bg-hover: #242323;
+  --main-btn-clr: #525fe1;
+  --title-color: #ddd;
+  --maintext-clr: #231f40;
+  --dashboard-clr: #0f133e;
+  --pre-tittle-clr: #525fe1;
+  --main-btn-hover-bg-clr: #231f40;
+  --icon-color: #f86f03;
+  --main-btn-hover-clr: #fff;
+  --banner-bg: #3c3734;
+  --bg-secondary: #525fe1;
+  --small-btn-clr: #f86f03;
+  --menuImg: url(./assets//images/menuwhite.png);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Urbanist", sans-serif !important;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-clr);
+}
+ul {
+  padding: 0 !important;
+}
+li {
+  list-style: none;
+}
+.light-theme {
+  background-color: var(--bg-color);
+  color: var(--text-clr);
+}
+.nav-link {
+  color: var(--text-clr) !important;
+}
+.navbar-brand {
+  color: var(--text-clr) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  color: var(--text-clr) !important;
+  text-decoration: none !important;
+}
+a:hover {
+  color: var(--text-clr) !important;
+}
+.header {
+  /* background-image: url(./assets/images/home-one-banner-3885e64011ecb9920f13.jpg); */
+  background-color: var(--banner-bg);
+}
+section {
+  padding: 130px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.radius-small {
+  border-radius: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::after,
+::before {
+  content: "";
+  position: absolute;
 }

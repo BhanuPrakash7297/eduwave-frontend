@@ -1,0 +1,9 @@
+.table thead tr th {
+  color: #fff !important;
+}
+.table tbody tr:nth-child(2n + 1) {
+  background-color: #ced1ec;
+}
+.table tbody tr:nth-child(2n) {
+  background-color: #acb2f0;
+}

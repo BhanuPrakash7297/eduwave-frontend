@@ -1,0 +1,113 @@
+.edu-breadcrumb-area {
+}
+.edu-breadcrumb-area {
+  background-image: url(../../../assets/images/breadcrumb-bg.6326af72e91c201611d6.jpg);
+
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+.breadcrumb-inner .page-title .title {
+  margin-bottom: 5px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.edu-breadcrumb-nav .edu-breadcumb {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+}
+.edu-breadcrumb-nav .edu-breadcumb li {
+  color: #6f6b80;
+  font-size: 16px;
+  font-weight: 500;
+}
+.edu-breadcrumb-nav .edu-breadcumb .breadcrumb-item a {
+  color: #231f40 !important;
+}
+.shap-image {
+  position: absolute;
+  z-index: -1;
+}
+
+.edu-breadcrumb-area .shape-wrapper .shape-image-1 {
+  left: 4px;
+  top: 26px;
+}
+.edu-breadcrumb-area .shape-wrapper .shape-image-2 {
+  left: 60%;
+  top: 31px;
+}
+.edu-breadcrumb-area .shape-wrapper .shape-image-3 {
+  right: -3px;
+  top: 57px;
+}
+.edu-breadcrumb-area .shape-wrapper .shape-image-4 {
+  right: 0;
+  bottom: 0;
+}
+.edu-breadcrumb-area .shape-wrapper .shape-image-5 {
+  left: 35%;
+  top: 85px;
+}
+.edu-breadcrumb-area .shape-wrapper .shape-image-6 {
+  left: 0;
+  bottom: 0;
+}
+.login-form-box {
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 40px;
+  border-radius: 10px;
+  position: relative;
+}
+.login-form-box h3 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.login-form input {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  height: 60px;
+  margin-bottom: 30px;
+  padding: 0 25px;
+  font-weight: 500;
+  color: #6f6b80;
+}
+.login-form input[type="checkbox"] {
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+}
+.login-form input[type="submit"] {
+  background-color: var(--main-btn-clr);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 60px;
+}
+.login-form label {
+  font-size: 18px;
+  color: #757185;
+  font-weight: 600;
+}
+.login-form p {
+  font-weight: 600;
+  font-size: 17px;
+}
+.login-form p a {
+  font-weight: 800;
+  font-size: 17px;
+  color: #f86f03 !important;
+  margin-left: 5px;
+  cursor: pointer;
+}

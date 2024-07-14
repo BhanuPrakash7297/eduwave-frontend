@@ -1,0 +1,25 @@
+.add-form input,
+.add-form textarea,
+.add-form select {
+  width: 100%;
+  padding: 12px 17px;
+  border: 1px solid transparent;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 17px;
+  line-height: 26px;
+  background-color: #fdfdff;
+}
+.progress-c {
+  align-items: center;
+  padding: 0 !important;
+  position: relative;
+}
+.progress-c label {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  transform: translateY(calc(-50% - 7px));
+  font-weight: 900;
+  font-size: 17px;
+}

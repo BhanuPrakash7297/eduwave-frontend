@@ -1,0 +1,4 @@
+.edu-dashboard {
+  min-height: calc(100vh - 80px);
+  background-color: var(--dashboard-clr);
+}

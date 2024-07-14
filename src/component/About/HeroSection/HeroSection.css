@@ -1,0 +1,99 @@
+.about-hero-section {
+  position: relative;
+}
+.eduvibe-image-1 {
+  position: relative;
+}
+.about-image-gallary .eduvibe-image-1 .image-1 {
+  border-radius: 50%;
+  height: 460px;
+  width: 460px;
+  z-index: 3;
+  position: relative;
+}
+.about-image-gallary .eduvibe-image-1 .eduvibe-img-blur img {
+	position: absolute;
+	left: -146px;
+	height: 739px;
+	width: 739px;
+	top: -136px;
+	z-index: 0;
+}
+.about-image-gallary .circle-img-wrapper {
+	position: absolute;
+	bottom: -87px;
+	right: -94px;
+	z-index: 3;
+	height: 272px;
+	width: 272px;
+}
+.about-image-gallary .circle-img-wrapper .circle-imm {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 272px;
+  height: 272px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-image-gallary .circle-img-wrapper .circle-imm span {
+  border-color: #ffa41b;
+  border-radius: 38% 62% 64% 36%/43% 35% 65% 57%;
+  border: 2px solid #ffa41b;
+  width: 100%;
+  height: 100%;
+  animation: eduVibe-rotaing 13s linear infinite;
+}
+@keyframes eduVibe-rotaing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.about-image-gallary .finished-session {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+  height: 170px;
+  width: 170px;
+  position: absolute;
+  border-radius: 100%;
+  left: -56px;
+  top: 5%;
+  z-index: 3;
+  background-color: #fff;
+}
+.about-image-gallary .finished-session .inner .text {
+	color: #525fe1;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 44px;
+}.about-image-gallary .finished-session .inner .finished-title {
+	color: #231f40;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+}.description {
+	margin: 0 0 30px;
+	line-height: 1.63;
+  color: #6f6b80;
+}.subtitle {
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 700;
+}.feature-style-3 .feature-title {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 44px;
+	margin-bottom: 5px;
+  color: var(--icon-color);
+}.feature-des {
+	margin: 0 0 30px;
+	line-height: 1.63;
+	color: #6f6b80;
+}

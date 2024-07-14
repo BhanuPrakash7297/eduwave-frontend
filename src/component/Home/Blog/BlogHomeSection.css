@@ -1,0 +1,77 @@
+.edu-blog-section {
+  background-color: var(--banner-bg);
+  position: relative;
+  z-index: 2;
+}
+.edu-blog-section .edu-blog-1 {
+  position: relative;
+  background-color: var(--bg-color);
+  overflow: hidden;
+  transition: 0.4s;
+  border-radius: 7px;
+}
+.edu-blog-section .edu-blog-1 .category a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  transition: 0.4s;
+  font-weight: 800;
+}
+.edu-blog-section .edu-blog-1 .inner {
+  padding: 30px;
+}
+.edu-blog-section .edu-blog-1 .title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+.edu-blog-section .edu-blog-1 .title a {
+  color: var(--heading-clr);
+}
+.edu-blog-section .blog-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.edu-blog-section .blog-card-bottom .edu-meta li {
+  margin: 5px 25px;
+  gap: 8px;
+  color: #6f6b80;
+}
+.edu-blog-section .edu-blog-1 .thumbnail {
+  margin-top: 30px;
+  overflow: hidden;
+}
+.thumbnail a {
+  display: block;
+  overflow: hidden;
+}
+.edu-blog-section .edu-blog-1 .thumbnail a img {
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.edu-blog-section .edu-blog-1:hover .thumbnail a img {
+  transform: scale(1.1);
+}
+
+.edu-blog-section .shape-wrapper .shap-image {
+  position: absolute;
+  z-index: -1;
+}
+.edu-blog-section .shape-wrapper .shape-image-1 {
+  left: 4px;
+  top: 139px;
+}
+.edu-blog-section .shape-wrapper .shape-image-2 {
+  right: -3px;
+  top: 139px;
+}
+.edu-blog-section .shape-wrapper .shape-image-3 {
+  right: -3px;
+  bottom: 0px;
+}
+.edu-blog-section .shape-wrapper .shape-image-4 {
+  left: 68px;
+  bottom: 76px;
+}

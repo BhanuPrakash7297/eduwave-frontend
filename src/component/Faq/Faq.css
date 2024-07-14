@@ -1,0 +1,61 @@
+.eduNavTab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 7.5px;
+  margin-top: 40px;
+}
+.eduNavTab li {
+  margin: 7.5px;
+}
+.eduNavTab li .nav-button {
+  background: #f5f5f5;
+  border: 0;
+  border-radius: 5px;
+  padding: 0 40px;
+  line-height: 26px;
+  height: 50px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  background-color: #525fe1;
+  color: #fff;
+  overflow: hidden;
+}
+.accordion-style-1 .edu-accordion-button[aria-expanded="true"]::after {
+  content: "-" !important;
+}
+
+.accordion-button::after {
+  background-image: url(../../assets/images/Plus_symbol.png) !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../../assets/images/minus.png) !important;
+}
+.eduNavTab li .nav-button::after {
+  background-image: url(../../../public/images/faqnavbg.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92%;
+  left: -5px;
+  top: -8px;
+  width: 77px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.edu-faq .accordion-item {
+  border: 0;
+  border-top: 1px solid #eee !important;
+}
+.edu-faq .accordion-header {
+  padding: 12px 0;
+  line-height: 14px;
+}
+.edu-faq .accordion-item .accordion-button {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}

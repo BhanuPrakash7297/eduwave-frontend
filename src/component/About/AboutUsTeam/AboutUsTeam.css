@@ -1,0 +1,80 @@
+.edu-about-team-1{
+  background-color: var(--banner-bg);
+  position: relative;
+}
+.edu-instructor-grid {
+  text-align: center;
+}.edu-instructor-grid .edu-instructor .inner {
+	padding: 20px;
+	position: relative;
+}.edu-instructor-grid .edu-instructor .inner .thumbnail a {
+	display: block;
+	position: relative;
+}.edu-instructor-grid .edu-instructor .inner .thumbnail a img {
+	border-radius: 100%;
+	width: 100%;
+
+ 
+}
+
+.edu-instructor-grid .edu-instructor::after {
+  background-image: url(../../../assets/images/About/image.png);
+	width: 100%;
+	height: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	left: 0;
+	top: 0;
+	transition: all 0.5s;
+}
+.row--20 {
+  margin: auto -15px;
+}
+.edu-instructor-grid .edu-instructor .inner .team-share-info {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+  z-index: 2;
+}.edu-instructor-grid .edu-instructor .inner .team-share-info a {
+	color: #525fe1 !important;
+	background-color: #fff;
+	height: 34px;
+	width: 34px;
+	line-height: 34px;
+	border-radius: 50%;
+  transform: translateY(8px) scale(.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: all .45s cubic-bezier(.23,.88,.34,.99);
+}
+
+.edu-instructor-grid:hover .edu-instructor .inner .team-share-info a {
+	transform: translateY(0) ;
+	visibility: visible;
+	opacity: 1;
+}
+.edu-instructor-grid:hover .edu-instructor::after {
+  transform: rotate(90deg);
+}.edu-instructor-grid .edu-instructor-info-1 .title {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}.edu-instructor-grid .edu-instructor-info-1 .desc {
+	color: #6f6b80;
+}
+.edu-instructor-grid .edu-instructor .inner .thumbnail a::after {
+	width: 100%;
+	height: 100%;
+	background-color: #231f40;
+	transition: all .3s cubic-bezier(.645,.045,.355,1);
+	top: 0;
+	left: 0;
+	z-index: 5;
+	border-radius: 50%;
+	opacity: 0
+}
+.edu-instructor-grid:hover .edu-instructor .inner .thumbnail a::after{
+	opacity: 0.4;
+}

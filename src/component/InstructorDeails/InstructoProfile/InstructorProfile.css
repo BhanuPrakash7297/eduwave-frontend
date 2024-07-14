@@ -1,0 +1,30 @@
+.course-statistic-wrapper {
+  background-color: var(--bg-secondary);
+  color: #fff;
+}
+.course-statsitic .total {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 56px;
+}
+.course-statsitic p {
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+}
+.course-statistic-wrapper .line-separator .course-statsitic {
+  border-left: 1px solid #ffffff2b;
+}
+
+.course-statistic-wrapper .line-separator:nth-child(1) .course-statsitic {
+  border-left: none;
+}
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* h1 {
+  color: rgba(0, 0, 255, 1);
+} */

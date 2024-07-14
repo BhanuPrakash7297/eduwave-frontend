@@ -1,0 +1,43 @@
+.edu-newsletter-area {
+  background-image: url(../../../assets/images/home-one-instructor-d6b889d2ee591630b787.jpg);
+}
+.newsletter-from {
+  margin-top: 60px;
+}
+.newsletter-from .input-box {
+  display: inline-block;
+  position: relative;
+}
+.newsletter-from .input-box input {
+  border: 0;
+  border-radius: 5px;
+  min-width: 570px;
+  height: 60px;
+  padding: 0 52px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  outline: none;
+}
+.mail-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 26px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.newsletter-from .input-box .send-btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--pre-tittle-clr);
+}

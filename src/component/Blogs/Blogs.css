@@ -1,0 +1,36 @@
+.edu-blog .inner .content {
+  padding: 30px;
+}
+.edu-blog {
+  background: var(--bg-color);
+  overflow: hidden;
+  transition: 0.4s;
+  position: relative;
+}
+.edu-blog .inner .content .status {
+  display: flex;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  color: #6f6b80;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.4s;
+  gap: 7px;
+}
+.edu-blog .inner .content .title {
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--maintext-clr);
+}
+.edu-blog .inner .content .blog-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.edu-blog .inner .content .blog-card-bottom .blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}

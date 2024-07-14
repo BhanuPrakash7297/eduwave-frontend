@@ -1,0 +1,68 @@
+.home-edu-category {
+  background-color: var(--banner-bg);
+}
+.service-card {
+  overflow: hidden;
+  position: relative;
+  transition: 0.4s;
+  background-color: var(--bg-color);
+  color: var(--text-clr);
+}
+.service-card::after {
+  bottom: 0;
+  height: 2px;
+  background-color: var(--main-btn-clr);
+  left: 0;
+  transition: 0.4s;
+  width: 0;
+}
+.service-card:hover::after {
+  width: 100%;
+}
+.service-card .inner .thumbnail a {
+  overflow: hidden;
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+}
+.service-card .inner .thumbnail a img {
+  width: 100%;
+  transition: 0.3s;
+}
+.service-card .inner .thumbnail a img:hover {
+  transform: scale(1.1);
+}
+.service-card .inner .content {
+  text-align: center;
+  padding: 25px;
+}
+.service-card .inner .content .course-total {
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 5px;
+  color: var(--main-btn-clr);
+}
+
+.service-card .inner .content .title {
+  margin-bottom: 20px;
+}
+.service-card .inner .content .description {
+  margin-bottom: 0px;
+}
+
+
+
+
+.main-btn a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000; /* Adjust the color as needed */
+  font-weight: bold; /* Optional: Make the text bold */
+}
+
+.main-btn a svg {
+  margin-left: 8px; /* Space between text and icon */
+  font-size: 1.2rem; /* Adjust the icon size if needed */
+}
