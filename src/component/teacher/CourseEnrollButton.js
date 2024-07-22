@@ -13,13 +13,10 @@ export const CourseEnrollButton = ({ price, courseId }) => {
       setIsLoading(true);
 
       const response = await axios.post(
-        `${process.env.REACT_APP_API}/api/v1/purchase/checkout`,
-        {},
+        `${process.env.REACT_APP_API}/api/v1/purchase/checkout/multiple-courses`,
         {
-          params: {
-            userId: user?.email,
-            courseId: courseId,
-          },
+          userId: user?.email,
+          courseIds: [courseId],
         }
       );
       console.log(response);

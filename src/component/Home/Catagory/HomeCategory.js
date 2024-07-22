@@ -20,6 +20,9 @@ const HomeCategory = () => {
               <div
                 className="col-lg-3 col-md-6 col-sm-6 col-12 g-5"
                 key={idx}
+
+
+    
                 data-aos="fade-up"
               >
                 <div className="service-card radius-small">
