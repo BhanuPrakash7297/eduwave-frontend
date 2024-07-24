@@ -36,6 +36,8 @@ import CourseChapterId from "./component/teacher/chapters/CourseChapterId";
 import { ProgressProvider, useProgressContext } from "./context/ProgressContex";
 import UserDashboard from "./component/UserDashboard";
 import Cart from "./component/Cart/Cart";
+import PageNotFound from "./component/PageNotFound";
+import AdminPrivate from "./component/AdminPrivate";
 
 const UserDashboardLayout = () => {
   return (
@@ -45,6 +47,7 @@ const UserDashboardLayout = () => {
           <AdminNavbar />
           <Routes>
             <Route path="/dashboard" element={<UserDashboard />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>
       </div>
@@ -72,6 +75,7 @@ const AdminLayout = () => {
               path="/teacher/courses/:courseId/chapters/:chapterId"
               element={<ChapterIdPage />}
             />
+             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>
       </div>
@@ -85,18 +89,17 @@ const AdminTeacherLayout = () => {
         <div className="h-full w-full">
           <AdminNavbar />
           <div className="m-5">
-          <Routes>
-            <Route path="/courses" element={<TeacherPage />} />
-            <Route path="/create-course" element={<CreateCourse />} />
-            <Route path="/:courseId" element={<Course />} />
-            <Route path="/analytics" element={<div>analytics</div>} />
-            <Route
-              path="/courses/:courseId/chapters/:chapterId"
-              element={<ChapterIdPage />}
-            />
-          </Routes>
+            <Routes>
+              <Route path="/courses" element={<TeacherPage />} />
+              <Route path="/create-course" element={<CreateCourse />} />
+              <Route path="/:courseId" element={<Course />} />
+              <Route path="/analytics" element={<div>analytics</div>} />
+              <Route
+                path="/courses/:courseId/chapters/:chapterId"
+                element={<ChapterIdPage />}
+              />
+            </Routes>
           </div>
-       
         </div>
       </div>
     </div>
@@ -128,6 +131,7 @@ const UserLayout = () => {
           }
         />
         <Route path="/author/:name" element={<InstructorDeails />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );
@@ -276,8 +280,11 @@ const App = () => {
         theme="light"
       />
       <Routes>
-        <Route path="/admin/teacher/*" element={<AdminTeacherLayout />} />
-        <Route path="/admin/*" element={<AdminLayout />} />
+        <Route path="/admin" element={<AdminPrivate />}>
+          <Route path="teacher/*" element={<AdminTeacherLayout />} />
+          <Route path="*" element={<AdminLayout />} />
+        </Route>
+
         <Route path="/*" element={<UserLayout />} />
         <Route path="/user/*" element={<UserDashboardLayout />} />
 
