@@ -62,7 +62,7 @@ const AdminLayout = () => {
         <div className="md:pl-56 h-full w-full">
           <AdminNavbar />
           <Routes>
-            <Route path="/dashboard" element={<UserDashboard />} />
+            <Route path="/dashboard" element={<AdminDashboard />} />
             <Route path="/search" element={<AdminSearch />} />
             <Route path="/teacher/courses" element={<TeacherPage />} />
             <Route path="/teacher/create-course" element={<CreateCourse />} />
@@ -73,6 +73,30 @@ const AdminLayout = () => {
               element={<ChapterIdPage />}
             />
           </Routes>
+        </div>
+      </div>
+    </div>
+  );
+};
+const AdminTeacherLayout = () => {
+  return (
+    <div className="flex flex-col">
+      <div className="flex gap-10">
+        <div className="h-full w-full">
+          <AdminNavbar />
+          <div className="m-5">
+          <Routes>
+            <Route path="/courses" element={<TeacherPage />} />
+            <Route path="/create-course" element={<CreateCourse />} />
+            <Route path="/:courseId" element={<Course />} />
+            <Route path="/analytics" element={<div>analytics</div>} />
+            <Route
+              path="/courses/:courseId/chapters/:chapterId"
+              element={<ChapterIdPage />}
+            />
+          </Routes>
+          </div>
+       
         </div>
       </div>
     </div>
@@ -252,6 +276,7 @@ const App = () => {
         theme="light"
       />
       <Routes>
+        <Route path="/admin/teacher/*" element={<AdminTeacherLayout />} />
         <Route path="/admin/*" element={<AdminLayout />} />
         <Route path="/*" element={<UserLayout />} />
         <Route path="/user/*" element={<UserDashboardLayout />} />

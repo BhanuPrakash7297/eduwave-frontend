@@ -10,6 +10,7 @@ const TeacherPage = () => {
       <Button onClick={() => Navigate("/admin/teacher/create-course")}>
         create Course
       </Button>
+      
     </div>
   );
 };

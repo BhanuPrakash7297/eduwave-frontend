@@ -4,7 +4,7 @@ import CourseCard from "../../Courses/CourseCard/CourseCard";
 import Slider from "react-slick";
 import { useState } from "react";
 import { useEffect } from "react";
-const RelatedCourse = () => {
+const RelatedCourse = ({courses}) => {
   const [Courses, setCourses] = useState([]);
   useEffect(() => {
     fetch("https://edu-vibe-server-eight.vercel.app/coures")
@@ -31,7 +31,7 @@ const RelatedCourse = () => {
           </div>
 
           <Slider {...settings}>
-            {Courses.map((course, idx) => (
+            {courses?.map((course, idx) => (
               <CourseCard course={course} key={idx} slick="yes" />
             ))}
           </Slider>

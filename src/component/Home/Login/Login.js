@@ -30,7 +30,7 @@ const Login = () => {
     const confirmPass = data.confirmPassword;
     const name = data.name;
     const from = "/"; // Define your redirect path
-
+    
     if (newUser) {
       if (password.length < 6 || confirmPass.length < 6) {
         setError("*Password Must be 6 characters or more!");
@@ -49,7 +49,7 @@ const Login = () => {
         toast("Register Successfully!");
 
         // Make an API call to save the user in your MongoDB
-        await axios.post(`${process.env.REACT_APP_API}/api/v1/user`, {
+       const res= await axios.post(`${process.env.REACT_APP_API}/api/v1/user`, {
           email,
           name,
           role: "user", // Use the unique identifier from your auth system

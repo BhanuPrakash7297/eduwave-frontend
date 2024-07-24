@@ -10,11 +10,13 @@ import axios from "axios";
 import { setLogLevel } from "firebase/app";
 import { Box, CircularProgress, Typography } from "@mui/material";
 
+
 const CourseDetails = () => {
   const { id } = useParams();
   console.log(id)
   const [courseDetails, setCourseDetails] = useState({});
   const [isLoading, setIsLoading] = useState(false);
+  const [courses,setCourses]=useState();
   const getCourse = async (req, res) => {
     try {
       setIsLoading(true);
@@ -29,8 +31,24 @@ const CourseDetails = () => {
     }
   };
 
+  const getAllCourses = async () => {
+    try {
+      setIsLoading(true);
+      const response = await axios.get(
+        `${process.env.REACT_APP_API}/api/v1/course/course-list/:${0}`
+      );
+      setCourses(response?.data?.data);
+      setIsLoading(false);
+      console.log(courses);
+    } catch (error) {
+      console.log(error);
+      setIsLoading(false);
+    }
+  };
+
   useEffect(() => {
     getCourse();
+    getAllCourses();
   }, []);
 
   if (isLoading) {
@@ -68,7 +86,7 @@ const CourseDetails = () => {
         <div>
           <BreadCrumb title="Course Details" currentPage="Course Details" />
           <DetailsContent details={courseDetails[0]} />
-          <RelatedCourse />
+          <RelatedCourse courses={courses} />
           <Footer />
         </div>
       )}
