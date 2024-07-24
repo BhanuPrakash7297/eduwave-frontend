@@ -15,7 +15,7 @@ export const CourseCard = ({
 }) => {
   console.log(imageUrl, _id, title, chaptersLength, price);
   return (
-    <Link href to={`/user/details/courses/${_id}`}>
+    <Link href to={`/admin/teacher/${_id}`}>
       <div className="group hover:shadow-sm transition overflow-hidden border rounded-lg p-3 h-full">
         <div className="relative w-full aspect-video rounded-md overflow-hidden">
           <img

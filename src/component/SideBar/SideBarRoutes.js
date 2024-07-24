@@ -5,11 +5,6 @@ import { useLocation } from "react-router-dom";
 
 const guestRoutes = [
   {
-    icon: Layout,
-    label: "Dashboard",
-    href: "/admin/dashboard",
-  },
-  {
     icon: Compass,
     label: "Browse",
     href: "/admin/search",
@@ -33,7 +28,7 @@ const SideBarRoutes = () => {
 
   const isTeacherPage = pathname.includes("/teacher");
   const routes = isTeacherPage ? teacherRoutes : guestRoutes;
-  
+
   return (
     <div className="flex flex-col w-full">
       {routes.map((route) => (

@@ -80,7 +80,7 @@ const DetailsContent = ({ details }) => {
               <img
                 className="object-cover"
                 alt={details?.title}
-                src={`${process.env.REACT_APP_API}${details?.imageUrl}`}
+                src={`${process.env?.REACT_APP_API}${details?.imageUrl}`}
               />
             </div>
           </div>

@@ -14,11 +14,15 @@ import { AuthContext } from "../../Context/UserContext";
 import React, { Component } from "react";
 import { LayoutDashboard, Settings, User } from "lucide-react";
 import { useCart } from "../../../context/cartContext";
+import axios from "axios";
 function NavBar() {
   const { user, logOut } = useContext(AuthContext);
   const [isDarkMode, setIsDarkMode] = useState(() => true);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [cart] = useCart();
+  console.log(user?.email);
+  const email = user?.email;
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add("dark-theme");
@@ -38,6 +42,34 @@ function NavBar() {
     window.addEventListener("scroll", onScrolled);
     return () => window.removeEventListener("scroll", onScrolled);
   }, [isDarkMode]);
+
+  const getUser = async () => {
+    try {
+      const userData = await axios.get(
+        `${
+          process.env.REACT_APP_API
+        }/api/v1/user/get-user`,
+        {
+          params:{
+            email:user?.email
+          }
+        }
+      );
+
+      console.log(userData);
+      if (userData?.data?.data?.role === "admin") {
+        setIsAdmin(true);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    if (user?.email) {
+      getUser();
+    }
+  }, [user]);
 
   return (
     <Navbar expand="lg" className={"edu_header scrolled"}>
@@ -93,19 +125,35 @@ function NavBar() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu variant="dark" className="dash-nav h-auto">
-                  <Link
-                    to="/user/dashboard"
-                    className="dropdown-item"
-                    style={{
-                      display: "flex",
-                      gap: "10px",
-                      alignItems: "center",
-                    }}
-                  >
-                    <LayoutDashboard className="w-4 h-4" />
-                    DashBoard
-                  </Link>
+                  {!isAdmin && (
+                    <Link
+                      to="/user/dashboard"
+                      className="dropdown-item"
+                      style={{
+                        display: "flex",
+                        gap: "10px",
+                        alignItems: "center",
+                      }}
+                    >
+                      <LayoutDashboard className="w-4 h-4" />
+                      DashBoard
+                    </Link>
+                  )}
 
+                  {isAdmin && (
+                    <Link
+                      to="/admin/search"
+                      className="dropdown-item"
+                      style={{
+                        display: "flex",
+                        gap: "10px",
+                        alignItems: "center",
+                      }}
+                    >
+                      <LayoutDashboard className="w-4 h-4" />
+                      DashBoard
+                    </Link>
+                  )}
                   <Link
                     to="/"
                     className="dropdown-item"
